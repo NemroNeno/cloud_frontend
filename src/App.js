@@ -34,7 +34,7 @@ function App() {
             },
           };
         const response = await axios.get(
-          `${process.env.REACT_APP_QUERY_BACKEND}/queries/${userId}`,config
+          `http://www.cloudreel.live/queries/${userId}`,config
         );
         const data = response.data.userData;
         console.log(data)

@@ -26,7 +26,7 @@ function Login(props) {
 
     try {
       const apiEndpoint = process.env.REACT_APP_AUTH_BACKEND;
-      const response = await axios.post(`${apiEndpoint}/users/login`, values);
+      const response = await axios.post(`http://www.cloudreel.live/users/login`, values);
       signIn({
         token: response.data.token,
         userId: response.data.userId,

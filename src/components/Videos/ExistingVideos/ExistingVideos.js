@@ -76,7 +76,7 @@ const ExistingVideos = ({ videos, onVideoDeleted }) => {
       };
 
       const response = await axios.delete(
-        `${process.env.REACT_APP_GALLERY_BACKEND}/videos/${userId}/${video._id}`,
+        `http://www.cloudreel.live/videos/${userId}/${video._id}`,
         config
       );
 

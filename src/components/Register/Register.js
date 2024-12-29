@@ -26,7 +26,7 @@ function Register(props) {
 
     try {
       const apiEndpoint = process.env.REACT_APP_AUTH_BACKEND;
-      const response = await axios.post(`${apiEndpoint}/users/register`, values);
+      const response = await axios.post(`http://www.cloudreel.live/users/register`, values);
       toast.success("Account created successful!");
       navigate("/login");
     } catch (err) {
